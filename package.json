@@ -1,9 +1,9 @@
 {
   "name": "fly-uglify",
   "version": "0.0.1",
-  "description": "Uglify JS2 for Fly",
+  "description": "Fly plugin for Uglify",
   "license": "MIT",
-  "repository": "https://github.com/flyjs/fly-uglify",
+  "repository": "https://github.com/bucaran/fly-uglify",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
