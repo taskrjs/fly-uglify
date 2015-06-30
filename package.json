@@ -1,0 +1,16 @@
+{
+  "name": "fly-uglify",
+  "version": "0.0.1",
+  "description": "Uglify JS2 for Fly",
+  "license": "MIT",
+  "repository": "https://github.com/flyjs/fly-uglify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jorge Bucaran",
+  "dependencies": {
+    "uglify-js": "^2.4.23",
+    "fly": "0.0.1"
+  }
+}
