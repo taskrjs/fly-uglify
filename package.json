@@ -10,7 +10,6 @@
   },
   "author": "Jorge Bucaran",
   "dependencies": {
-    "uglify-js": "^2.4.23",
-    "fly": "0.0.1"
+    "uglify-js": "^2.4.23"
   }
 }
