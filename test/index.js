@@ -4,10 +4,11 @@ const uglify = require("../")
 test("fly-uglify", (t) => {
   t.plan(3)
   uglify.call({
-    filter: function (name, transform, options) {
+    filter: function (name, transform) {
+      const res = transform("/* yay */")
       t.equal(name, "uglify", "add uglify filter")
-      t.ok(/^\s*$/.test(transform("/* yay */")), "uglify transform")
-      t.equal(options.ext, ".js", "extension is .js")
+      t.ok(/^\s*$/.test(res.code), "uglify transform")
+      t.equal(res.ext, ".js", "extension is .js")
     }
   })
 })
