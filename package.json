@@ -9,9 +9,13 @@
     "test": "xo && tape test/*.js | tap-spec"
   },
   "author": "Jorge Bucaran",
+  "keywords": [
+    "fly",
+    "fly-plugin",
+    "uglify"
+  ],
   "dependencies": {
-    "object-assign": "^3.0.0",
-    "uglify-js": "^2.4.23"
+    "uglify-js": "^2.7.0"
   },
   "devDependencies": {
     "tap-spec": "^4.0.2",
@@ -21,9 +25,9 @@
   "engines": {
     "node": ">= 4.6.0"
   },
-  "keywords": [
-    "fly",
-    "fly-plugin",
-    "uglify"
-  ]
+  "xo": {
+    "rules": {
+      "require-yield": 1
+    }
+  }
 }
