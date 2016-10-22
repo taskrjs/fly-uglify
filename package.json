@@ -18,6 +18,7 @@
     "uglify-js": "^2.7.0"
   },
   "devDependencies": {
+    "fly": "beta",
     "tap-spec": "^4.0.2",
     "tape": "^4.0.0",
     "xo": "*"
@@ -27,7 +28,8 @@
   },
   "xo": {
     "rules": {
-      "require-yield": 1
+      "require-yield": 1,
+      "curly": 1
     }
   }
 }
