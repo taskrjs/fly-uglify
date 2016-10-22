@@ -4,48 +4,40 @@
   </a>
 </div>
 
-> [Uglify](https://github.com/mishoo/UglifyJS2) plugin for _[Fly][fly]_.
+# fly-uglify [![][travis-badge]][travis-link]
 
-[![][fly-badge]][fly]
-[![npm package][npm-ver-link]][releases]
-[![][dl-badge]][npm-pkg-link]
-[![][travis-badge]][travis-link]
-[![][mit-badge]][mit]
+> [Uglify JS](https://github.com/mishoo/UglifyJS2) plugin for Fly.
 
-## Usage
-> Check out the [documentation](https://github.com/mishoo/UglifyJS2#usage) to see the available options.
+## Install
 
-### Install
-
-```a
-npm install -D fly-uglify
+```
+npm install --save-dev fly-uglify
 ```
 
-### Example
+## API
+
+### .uglify(options)
+
+> Check out the [UglifyJS documentation](https://github.com/mishoo/UglifyJS2#usage) to see the available options.
+
+## Usage
 
 ```js
-export build = function* () {
-  yield this
-    .source("src/**/*.uglify")
-    .uglify()
-    .target("dist/")
+exports.build = function * () {
+  yield this.source('src/**/*.uglify')
+    .uglify({
+      compress: {
+        drop_console: true,
+        join_vars: true
+      }
+    })
+    .target('dist');
 }
 ```
 
-# License
+## License
 
-[MIT][mit] © [Jorge Bucaran][author] et [al][contributors]
+MIT © [FlyJS](https://github.com/flyjs/fly)
 
-
-[mit]:          http://opensource.org/licenses/MIT
-[author]:       http://about.bucaran.me
-[contributors]: https://github.com/bucaran/fly-uglify/graphs/contributors
-[releases]:     https://github.com/bucaran/fly-uglify/releases
-[fly]:          https://www.github.com/flyjs/fly
-[fly-badge]:    https://img.shields.io/badge/fly-JS-05B3E1.svg?style=flat-square
-[mit-badge]:    https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square
-[npm-pkg-link]: https://www.npmjs.org/package/fly-uglify
-[npm-ver-link]: https://img.shields.io/npm/v/fly-uglify.svg?style=flat-square
-[dl-badge]:     http://img.shields.io/npm/dm/fly-uglify.svg?style=flat-square
 [travis-link]:  https://travis-ci.org/bucaran/fly-uglify
 [travis-badge]: http://img.shields.io/travis/bucaran/fly-uglify.svg?style=flat-square
