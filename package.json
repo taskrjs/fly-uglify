@@ -6,13 +6,7 @@
   "repository": "https://github.com/bucaran/fly-uglify",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint *.js",
-    "setup": "npm i && npm test",
-    "spec": "npm run test | tspec",
-    "test": "npm run lint && npm run test-harmony",
-    "build": "echo No build task specified.",
-    "deploy": "npm run test && git push origin master && npm publish",
-    "test-harmony": "node --harmony --harmony_arrow_functions ./node_modules/tape/bin/tape test/*.js"
+    "test": "xo && tape test/*.js | tap-spec"
   },
   "author": "Jorge Bucaran",
   "dependencies": {
@@ -20,9 +14,9 @@
     "uglify-js": "^2.4.23"
   },
   "devDependencies": {
-    "eslint": "^0.21.2",
     "tap-spec": "^4.0.2",
-    "tape": "^4.0.0"
+    "tape": "^4.0.0",
+    "xo": "*"
   },
   "engines": {
     "iojs": ">= 1.0.0",
