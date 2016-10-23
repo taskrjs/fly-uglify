@@ -6,7 +6,7 @@
 
 # fly-uglify [![][travis-badge]][travis-link]
 
-> [Uglify JS](https://github.com/mishoo/UglifyJS2) plugin for Fly.
+> [UglifyJS](https://github.com/mishoo/UglifyJS2) plugin for Fly.
 
 ## Install
 
