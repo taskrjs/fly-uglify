@@ -18,8 +18,8 @@
     "uglify-js": "^2.7.0"
   },
   "devDependencies": {
-    "fly": "^2.0.0",
-    "fly-clear": "^1.0.0",
+    "fly": "^2.0.4",
+    "fly-clear": "^1.0.1",
     "tap-spec": "^4.0.2",
     "tape": "^4.0.0",
     "xo": "*"

@@ -210,7 +210,7 @@ cliui@^2.1.0:
     right-align "^0.1.1"
     wordwrap "0.0.2"
 
-clor@^5.0.0:
+clor@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/clor/-/clor-5.0.1.tgz#597c9183a9ebc033d671721333c2ca862d1dfabf"
 
@@ -694,20 +694,20 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-fly-clear@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/fly-clear/-/fly-clear-1.0.0.tgz#6244cbadf06bc3eabb89cca9541d38fd9e6c1548"
+fly-clear@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/fly-clear/-/fly-clear-1.0.1.tgz#6e14200478c741d72b217abd916b18c75211852c"
   dependencies:
     arrify "^1.0.1"
     bluebird "^3.4.7"
     rimraf "^2.5.4"
 
-fly@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/fly/-/fly-2.0.0.tgz#015ac87e46fe5a1421600c027b08f07fd2f16913"
+fly@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/fly/-/fly-2.0.4.tgz#4d6bbc5f27a522a9f1fbd7e15d69badd1b3c2883"
   dependencies:
     bluebird "^3.4.7"
-    clor "^5.0.0"
+    clor "^5.0.1"
     glob "^7.1.1"
     minimist "^1.2.0"
     mkdirp "^0.5.1"
