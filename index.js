@@ -1,7 +1,7 @@
 'use strict';
 
-const {extname} = require('path');
-const {minify} = require('uglify-js');
+const extname = require('path').extname;
+const minify = require('uglify-js').minify;
 
 module.exports = function (fly) {
 	fly.plugin('uglify', {}, function * (file, opts) {
